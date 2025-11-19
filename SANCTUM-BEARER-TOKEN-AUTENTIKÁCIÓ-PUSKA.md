@@ -205,17 +205,3 @@ public function destroy(Request $r, Reservation $res)
     return response()->json(['message' => 'Deleted'], 200);
 }
 ```
-
----
-
-## Rövid lényeg
-
-- ✔ Sanctum Bearer token: használd a User::createToken()->plainTextToken-et
-- ✔ auth:sanctum middleware → csak bejelentkezve érhető el a védett API
-- ✔ Admin: minden foglalást lát
-- ✔ User: csak a saját foglalásait látja / módosíthatja / törölheti
-- ✔ ReservationController-ben minden művelet előtt jogosultság-ellenőrzés
-
----
-
-Ha szeretnéd, készítek egy komplett mintaprojektet vagy egy Pull Request-et a kód beillesztéséhez a repo-dba (pl. AuthController és ReservationController teljes file-okkal), vagy hozzáadok példákat Postman/HTTP kérésekre (register/login + használat Bearer tokennel). Mit szeretnél következő lépésként?
