@@ -1,4 +1,4 @@
-# SANCTUM – BEARER TOKEN AUTENTIKÁCIÓ – PUSKA
+# SANCTUM – BEARER TOKEN AUTENTIKÁCIÓ
 
 Ez a rövid "puska" összefoglalja, hogyan állíts be Laravel Sanctum Bearer token alapú autentikációt, egy egyszerű AuthController-rel (register, login, logout) és egy Reservation erőforrást jogosultságokkal (admin vs user).
 
